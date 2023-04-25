@@ -63,5 +63,12 @@ padding: 8px 12px ;
         width: 100%;
      }
 
+.image-wrapper {
+    width: 100%;
+}
 
+.image {
+    max-width: 100%;
+    height: auto;
+}
 }
