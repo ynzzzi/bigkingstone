@@ -51,19 +51,51 @@
   -ms-transform: translate(-50%, -50%)
 }
 
-.container:hover .image {
-  opacity: 0.3;
+div.gallery {
+  border: 1px solid #ccc;
 }
 
-.container:hover .middle {
-  opacity: 1;
+div.gallery:hover {
+  border: 1px solid #777;
 }
 
-.text {
-  background-color: #ffffff;
-  color: rgb(241, 241, 241);
-  font-size: 16px;
-  padding: 16px 32px;
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
   </style>  
 </head>
@@ -181,41 +213,48 @@
     
     <div id="header">
 
+<div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="img_5terre.jpg">
+        <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+  </div>
+  
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="img_forest.jpg">
+        <img src="웹디자인/울산대교전망대.jpg" alt="Forest" width="600" height="400">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="img_lights.jpg">
+        <img src="웹디자인/일산해수욕장.jpg alt="Northern Lights" width="600" height="400">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="img_mountains.jpg">
+        <img src="웹디자인/주전.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+  </div>
+  
+  <div class="clearfix"></div>      
 
   </main>
 
-  <div class="image-wrapper" style="text-align: center;">
-    <img class="image" img src="웹디자인/page22.png">
-    </div>
-<div style="text-align: center;">
-    <div class="container">
-      <img src="웹디자인/슬도.jpg" alt="슬도" class="image" >
-      <div class="middle">
-        <div class="text"><a href="https://map.naver.com/v5/search/%EC%8A%AC%EB%8F%84/place/36639812?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&c=15,0,0,0,dh">슬도</a></div>
-      </div>
-    </div>
-     
-    <div class="container">
-      <img src="웹디자인/울산대교전망대.jpg" alt="전망대" class="image">
-      <div class="middle">
-        <div class="text"><a href="https://map.naver.com/v5/entry/place/36667607?lng=129.4061663996743&lat=35.501833699781464&placePath=%2Fhome&entry=plt">울산대교 전망대</a></div>
-      </div>
-    </div>
 
-    <div class="container">
-      <img src="웹디자인/일산해수욕장.jpg" alt="바다" class="image">
-      <div class="middle">
-        <div class="text"><a href="https://map.naver.com/v5/entry/place/13491605?lng=129.4308750000636&lat=35.49573459996607&placePath=%2Fhome&entry=plt">일산해수욕장</a></div>
-      </div>
-    </div>
-  
-    <div class="container">
-      <img src="웹디자인/주전.jpg" alt="바다" class="image">
-      <div class="middle">
-        <div class="text"><a href="https://map.naver.com/v5/search/%EC%9A%B8%EC%82%B0%20%EC%A3%BC%EC%A0%84/place/16588503?placePath=%3Fentry=pll&c=15,0,0,0,dh">주전몽돌해변</a></div>
-      </div>
-    </div>
-</div>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
