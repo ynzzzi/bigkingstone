@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>미르놀이터</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@200&display=swap" rel="stylesheet">
+
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+
+
+  <link href="assets/css/variables.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+
+
+  <style>
+
+    * {
+      margin: 0;
+    }
+
+   body{
+    animation: fadein 2000ms ease-out;
+    -moz-animation: fadein 2000ms ease-out; /* Firefox */
+    -webkit-animation: fadein 2000ms ease-out; /* Safari and  Chrome */
+    -o-animation: fadein 2000ms ease-out; /* Opera */
+}
+@keyframes fadein {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {opacity:0;}
+    to {opacity:1;}
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {opacity:0;}
+    to {opacity:1;}
+}
+@-o-keyframes fadein { /* Opera */
+    from {opacity:0;}
+    to {opacity: 1;}
+}
+
+.slider {
+  width: 700px;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slides img {
+  width: 100%;
+  height: auto;
+}
+
+.arrows {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.arrow {
+  width: 30px;
+  height: 30px;
+  background-color: gray;
+  background-image: url('웹디자인/화살표.png'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+
+.arrow:hover {
+  background-color: rgb(209, 209, 209);
+}
+
+.prev {
+  transform: translateX(-50%);
+  background-image: url('웹디자인/화살표 - 복사본.png');
+}
+
+.next {
+  transform: translateX(50%);
+}
+
+</style>       
+</head>
+<body>
+<body background="웹디자인/page2b.png">
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+ 
+       <img src="웹디자인/logo.png">
+      
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="page1.html">대왕암 소개</a></li>
+          <li class="dropdown"><a href="page2.html"><span>시설안내</span><i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="page2.html">미르놀이터</a></li>
+              <li><a href="page4.html">출렁다리</a></li>
+              </ul>
+          <li class="dropdown"><a href="page3.html"><span>둘레길</span><i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="page5.html">바닷가길</a></li>
+              <li><a href="page6.html">전설바위길</a></li>
+              <li><a href="page7.html">송림길</a></li>
+              <li><a href="page8.html">사계절길</a></li>
+              </ul>
+              <li><a href="category.html">대왕암 소식</a></li>
+        </ul>
+      </nav>
+
+      <div class="position-relative">
+        <a href="#" class="mx-2"><span class="bi-facebook"></span></a>
+        <a href="#" class="mx-2"><span class="bi-twitter"></span></a>
+        <a href="#" class="mx-2"><span class="bi-instagram"></span></a>
+
+        <a href="#" class="mx-2 js-search-open"><span class="bi-search"></span></a>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+
+   
+        <div class="search-form-wrap js-search-form-wrap">
+          <form action="search-result.html" class="search-form">
+            <span class="icon bi-search"></span>
+            <input type="text" placeholder="Search" class="form-control">
+            <button class="btn js-search-close"><span class="bi-x"></span></button>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+  <br><br><br>
+  <div style="text-align: center;">    
+    <div class="bridge"><img src="웹디자인/출렁다리.png" style="max-width:100%; height:auto;"><br>
+    <p style="font-size: large">대왕암공원 출렁다리는 울산 최초의 출렁다리이자 동구 최초의 대규모 상업관광시설입니다.<br>
+       대왕암공원 내 해안산책로의 "햇개비"에서 "수루방" 사이를 연결하며 길이 303m 규모로 조성되었습니다.<br>
+        중간 지지대 없이 한 번에 연결되는 방식으로, 현재 전국의 출렁다리 중 경간 장로는 길이가 가장 깁니다.
+</p></div>
+  </div><br><br>
+<div style="text-align: center;">
+  <img src="웹디자인/출렁풍경.png"><br><br>
+  </div>
+  <div class="slider" style="text-align: center;">
+    <div class="slides">
+      <img src="웹디자인/출렁다리1.jpg" alt="이미지 1">
+      <img src="웹디자인/출렁다리33.jpg" alt="이미지 2">
+      <img src="웹디자인/출렁다리2.jpg" alt="이미지 3">
+    </div>
+    <div class="arrows">
+      <div class="arrow prev" img src="웹디자인/화살표.png"></div>
+      <div class="arrow next" img src="웹디자인/화살표.png"></div>
+    </div>
+  </div>
+<br><br><br>
+<div style="text-align: center;">
+  <img src="웹디자인/영상출렁.png"><br><br><br>
+  <iframe width="700" height="400" src="https://www.youtube.com/embed/xWxZdtFgMFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <br><br><br><br><img src="웹디자인/출렁주의.png">
+</div>
+<footer>
+  <img src="웹디자인/footer.png" style="max-width:100%; height:auto;">
+  </footer>
+<script>
+const slider = document.querySelector('.slider');
+const slides = document.querySelector('.slides');
+const prevArrow = document.querySelector('.prev');
+const nextArrow = document.querySelector('.next');
+let currentSlide = 0;
+
+function showSlide(n) {
+  currentSlide = (n + slides.children.length) % slides.children.length;
+  slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+}
+
+prevArrow.addEventListener('click', () => {
+  showSlide(currentSlide - 1);
+});
+
+nextArrow.addEventListener('click', () => {
+  showSlide(currentSlide + 1);
+});
+
+slider.addEventListener('mouseenter', () => {
+  prevArrow.style.opacity = '1';
+  nextArrow.style.opacity = '1';
+});
+
+slider.addEventListener('mouseleave', () => {
+  prevArrow.style.opacity = '0';
+  nextArrow.style.opacity = '0';
+});
+
+showSlide(currentSlide);
+
+</script>
+    
+    </body>
+    
+    </html>
